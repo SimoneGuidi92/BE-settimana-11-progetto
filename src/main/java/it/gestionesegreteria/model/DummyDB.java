@@ -19,14 +19,7 @@ public class DummyDB {
 	private final List<CorsoLaurea> corsi = new ArrayList<>();
 	
 	
-	/*public List<Studente> getAllStudenti() {	
-		return studenti.get(0); // .values ritorna una collection
-		// invece il .keyset ritorna un set (il set assicura di non avere doppioni)
-	}
 	
-	public Collection<CorsoLaurea> getAllCorsi() {
-		return corsi.values();
-	}*/
 	
 	public void aggiungiCorso(CorsoLaurea corso) {
 		corsi.add(corso);
