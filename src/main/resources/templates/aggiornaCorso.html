@@ -7,6 +7,14 @@
 <link rel="stylesheet" th:href="@{/css/universita.css}"/>
 </head>
 <body>
+
+	<header>
+	
+		<h1>Universita' di Atlantide</h1>
+		<h2>Aggiorna corso di laurea</h2>
+	
+	</header>
+
 	<form action="#" method="post"
 		th:action="@{/corsi/aggiornacorso/{codice}(codice=${corso.getCodice()})}"
 		th:object="${corso}">
@@ -30,5 +38,11 @@
 		</table>
 		<input type="submit" value="Aggiorna">
 	</form>
+	
+	<a href="http://localhost:8080">Torna alla home</a>
+	
+	<footer>
+		<p>Powered by Simone Guidi &copy; 2022</p>
+	</footer>
 </body>
 </html>
